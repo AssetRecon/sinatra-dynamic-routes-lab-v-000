@@ -22,28 +22,12 @@ array = []
   @number.times do
     array << @phrase
   end
-
   array.join
-
 end
 
-get '/say/:word1/:word2/:word3/:word4/:word5' do
-@word1 = params[:word1]
-@word2 = params[:word2]
-@word3 = params[:word3]
-@word4 = params[:word4]
-@word5 = params[:word5]
-array = []
-array << @word1
-array << @word2
-array << @word3
-array << @word4
-array << @word5
-
-array.join(" ")
-array
-
- end
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}."
+  end
 
 
 end
