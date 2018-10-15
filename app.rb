@@ -12,7 +12,7 @@ end
 get '/square/:number' do
   @number = params[:number]
   square = @number.to_i*@number.to_1
-  square
+  square.to_s
 end
 
 get '/say/:number/:phrase' do
