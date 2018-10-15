@@ -35,7 +35,7 @@ get '/:operation/:number1/:number2' do
   number2 = params[:number2].to_i
 
   if operation = "add"
-    answer.to_s = number1 + number2
+    answer = (number1+number2).to_s
   elsif operation = "subtract"
     answer.to_s = number1 - number2
   elsif operation = "multiply"
