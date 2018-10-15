@@ -41,6 +41,7 @@ array << @word4
 array << @word5
 
 array.join(" ")
+array
 
  end
 
