@@ -37,11 +37,11 @@ get '/:operation/:number1/:number2' do
   if operation = "add"
     answer = (number1+number2).to_s
   elsif operation = "subtract"
-    answer = (number1 - number2).to_s
+    answer = (number1-number2).to_s
   elsif operation = "multiply"
-    answer = (number1 * number2).to_s
+    answer = (number1*number2).to_s
   elsif operation = "divide"
-    answer = (number1 / number2).to_s
+    answer = (number1/number2).to_s
   end
 
 
