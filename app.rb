@@ -43,7 +43,7 @@ get '/:operation/:number1/:number2' do
   elsif operation = "divide"
     answer = (number1/number2).to_s
   end
-
+answer
 
 end
 
