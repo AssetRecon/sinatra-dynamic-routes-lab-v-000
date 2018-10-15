@@ -33,6 +33,15 @@ end
 @word3 = params[:word3]
 @word4 = params[:word4]
 @word5 = params[:word5]
+array = []
+array << @word1
+array << @word2
+array << @word3
+array << @word4
+array << @word5
+
+array.join(" ")
+
  end
 
 
