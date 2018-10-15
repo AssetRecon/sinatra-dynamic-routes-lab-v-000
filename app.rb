@@ -11,7 +11,7 @@ end
 
 get '/square/:number' do
   @number = params[:number]
-  square = @number.to_i*@number.to_1
+  square = (@number.to_i)*(@number.to_i)
   square.to_s
 end
 
